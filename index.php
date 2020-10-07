@@ -18,7 +18,8 @@ $max_table = 10;
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./main.css">
-    <title>TP 8</title>
+    <link rel="icon" href="favicon.png">
+    <title>Tables de multiplication</title>
 </head>
 <body>
 <header><h1>Tables de multiplication pour le primaire</h1></header>
@@ -29,6 +30,7 @@ $max_table = 10;
     }
     echo "<a class='methode' href='?table=$table&methode=plus'>+</a>";
     echo "<a  class='methode' href='?table=$table&methode=fois'>x</a>";
+    echo "<a  class='methode' href='?table=$table&methode=division'>÷</a>";
     ?>
 </nav>
 <main>
@@ -40,7 +42,7 @@ $max_table = 10;
         </thead>
         <tbody>
         <?php
-        for ($i = 0; $i < $max_table + 1; $i += 1) {
+        for ($i = 1; $i < $max_table + 1; $i += 1) {
             $result = 0;
             if ($methode === "plus") {
                 $result = intval($table) + intval($i);
@@ -50,11 +52,15 @@ $max_table = 10;
                 $result = intval($table) * intval($i);
                 echo "<tr><td>" . $table . " x " . $i . " = " . $result . "</td></tr>";
             }
+            if ($methode === "division") {
+                $result = number_format(intval($table) / intval($i), 2, ',', ' ');
+                echo "<tr><td>" . $table . " ÷ " . $i . " = " . $result . "</td></tr>";
+            }
         }
         ?>
         </tbody>
     </table>
 </main>
-<footer>Site réalisé par Léo Hugonnot</footer>
+<footer>© 2020 Léo Hugonnot</footer>
 </body>
 </html>
