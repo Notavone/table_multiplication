@@ -1,0 +1,43 @@
+* {
+    font-family: sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+table {
+    margin: 20px auto;
+}
+
+td, th {
+    padding: 10px 100px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+a {
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+a.methode {
+    background-color: black;
+    color: white;
+}
