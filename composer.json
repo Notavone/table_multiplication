@@ -1,0 +1,14 @@
+{
+  "name": "",
+  "description": "",
+  "minimum-stability": "",
+  "license": "",
+  "authors": [
+    {
+      "name": "Léo Hugonnot",
+      "email": "leo.hugonnot@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}
