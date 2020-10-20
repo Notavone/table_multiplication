@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "Notavone/table-mul",
   "description": "",
-  "minimum-stability": "stable",
-  "license": "",
+  "minimum-stability": "dev",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Léo Hugonnot",
