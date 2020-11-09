@@ -6,12 +6,6 @@ header, footer {
     text-align: center;
 }
 
-h1 {
-    font-family: cursive;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
-}
-
 nav {
     display: flex;
     justify-content: center;
@@ -20,34 +14,4 @@ nav {
 aside {
     display: flex;
     justify-content: center;
-}
-
-table {
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-thead tr td {
-    font-weight: bolder;
-}
-
-td {
-    padding: 10px 100px;
-    text-align: center;
-    border: 2px solid black;
-}
-
-a {
-    font-family: monospace;
-    color: black;
-    padding: 5px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 5px;
-    border: 2px solid black;
-}
-
-a.methode {
-    background-color: black;
-    color: white;
 }
