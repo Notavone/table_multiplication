@@ -4,31 +4,41 @@
 
 header, footer {
     text-align: center;
-    padding: 5px;
 }
 
 h1 {
+    font-family: cursive;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
 }
 
 nav {
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
+}
+
+aside {
+    display: flex;
     justify-content: center;
 }
 
 table {
     margin: 20px auto;
+    border-collapse: collapse;
 }
 
-td, th {
+thead tr td {
+    font-weight: bolder;
+}
+
+td {
     padding: 10px 100px;
     text-align: center;
     border: 2px solid black;
 }
 
 a {
+    font-family: monospace;
     color: black;
     padding: 5px 15px;
     text-decoration: none;
