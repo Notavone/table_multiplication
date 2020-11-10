@@ -6,12 +6,7 @@ header, footer {
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-aside {
+nav, aside {
     display: flex;
     justify-content: center;
 }
