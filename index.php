@@ -1,11 +1,11 @@
 <?php
-if (!empty($_GET) && isset($_GET["methode"])) {
+if (isset($_GET["methode"])) {
     $methode = $_GET["methode"];
 } else {
     $methode = "plus";
 }
 
-if (!empty($_GET) && isset($_GET["table"])
+if (isset($_GET["table"])
 ) {
     $table = $_GET["table"];
 } else {
@@ -33,14 +33,14 @@ $maxTables = 10;
 <div class="container">
     <div class="row">
         <div class="col">
-            <nav class="mt-1">
+            <nav class="my-2">
                 <?php
                 for ($i = 1; $i < $maxTables + 1; $i += 1) {
                     echo '<a class="btn btn-secondary mx-1" href="?table=' . $i . '&methode=' . $methode . '">' . $i . '</a>';
                 }
                 ?>
             </nav>
-            <aside class="my-2">
+            <aside>
                 <?php
                 echo '<a class="btn btn-dark mx-1" class="methode" href="?table=' . $table . '&methode=plus">+</a>';
                 echo '<a class="btn btn-dark mx-1" class="methode" href="?table=' . $table . '&methode=fois">x</a>';
